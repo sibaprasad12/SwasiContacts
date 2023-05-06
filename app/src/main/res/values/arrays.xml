@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="contact_drawable_array">
+        <item>@drawable/ic_play_circle</item>
+    </array>
+
+
+    <array name="image_drawable_array">
+
+    </array>
+
+</resources>

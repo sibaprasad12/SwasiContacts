@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav_graph"
+    app:startDestination="@id/contactFragment">
+
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.swasi.utility.contact.ContactFragment"
+        android:label="ContactFragment"
+        tools:layout="@layout/fragment_contact">
+        <action
+            android:id="@+id/action_contactFragment_to_editContactFragment"
+            app:destination="@id/editContactFragment">
+            <argument
+                android:name="contactEntity"
+                app:argType="com.swasi.utility.model.ContactEntity"
+                app:nullable="true" />
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/editContactFragment"
+        android:name="com.swasi.utility.contact.EditContactFragment"
+        android:label="EDit Contact"
+        tools:layout="@layout/fragment_edit_contact">
+        <action
+            android:id="@+id/action_editContactFragment_to_contactFragment"
+            app:destination="@id/contactFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/flashLightFragment"
+        android:name="com.swasi.utility.flashLight.UtilityFragment"
+        android:label="LauncherNavFragment"
+        tools:layout="@layout/fragment_utility" />
+
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="com.swasi.utility.video.VideoFragment"
+        android:label="thirdNavFragment"
+        tools:layout="@layout/fragment_video">
+        <action
+            android:id="@+id/action_videoFragment_to_editVideoFragment"
+            app:destination="@id/editVideoFragment">
+            <argument
+                android:name="videoEntity"
+                app:argType="com.swasi.utility.model.VideoEntity"
+                app:nullable="true" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/editVideoFragment"
+        android:name="com.swasi.utility.video.EditVideoFragment"
+        android:label="Edit Video"
+        tools:layout="@layout/fragment_edit_video">
+        <action
+            android:id="@+id/action_editVideoFragment_to_videoFragment"
+            app:destination="@id/videoFragment" />
+    </fragment>
+
+</navigation>

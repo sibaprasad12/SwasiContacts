@@ -1,0 +1,39 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/meteorRootView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.MeteorActivity">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayoutTvSHow"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/purple_500"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:tabIndicatorColor="@color/teal_200"
+            app:tabIndicatorHeight="5dp"
+            app:tabMode="fixed"
+            app:tabTextColor="#fff" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/tvShowViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/tabLayoutTvSHow"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

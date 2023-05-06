@@ -1,0 +1,81 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="video"
+            type="com.swasi.utility.model.VideoEntity" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorSecondaryText"
+        android:padding="@dimen/dimen_10dp"
+        tools:context=".contact.EditContactFragment">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageViewProfile"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/video_camera_front_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etVideoName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:maxLines="1"
+            android:hint="@string/video_name"
+            android:singleLine="true"
+            android:paddingStart="@dimen/dimen_10dp"
+            android:paddingEnd="@dimen/dimen_10dp"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewProfile"
+            tools:text="Name" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etVideoUrl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Video Url"
+            android:singleLine="true"
+            android:paddingStart="@dimen/dimen_10dp"
+            android:paddingEnd="@dimen/dimen_10dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/etVideoName"
+            tools:text="Video Url" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:background="@drawable/rounded_button"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/etVideoUrl" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:background="@drawable/rounded_button_cancel"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonSave"
+            tools:layout_editor_absoluteX="10dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

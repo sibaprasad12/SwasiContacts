@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name">Swasi Utility</string>
+    <string name="backendless_subdomain">savvyface.backendless.app</string>
+    <string name="backendless_app_id">1332D56C-A8B0-E478-FF11-FDF7250EC100</string>
+    <string name="backendless_android_api_key">9C6F4C8D-1AEC-4E73-B313-FD75CBE695D7</string>
+    <string name="backendless_ios_api_key">7898602B-6EF0-4046-8B7F-60F129F53F9F</string>
+    <string name="backendless_js_api_key">B7A29DF9-CFA6-4011-8D6F-FA4EEE072B48</string>
+
+    <string name="tab_title_home">Swasi Utility</string>
+    <string name="tab_title_videos">Videos</string>
+    <string name="tab_title_utility">Settings</string>
+
+    <string name="btn_LoginBackendless">Log in</string>
+    <string name="btn_LogoutBackendless">Logout from Backendless</string>
+    <string name="btn_LoginFacebook">Login in Facebook</string>
+    <string name="btn_LoginGooglePlus">Login in GooglePlus</string>
+    <string name="btn_LoginTwitter">Login in Twitter</string>
+
+    <string name="textView_BackendlessUserInfo">Backendless User info.</string>
+    <string name="editText_BackendlessUserInfo">You should login as Backendless user first.</string>
+    <string name="choose_photo">Select Photo</string>
+    <string name="register_text">Register</string>
+    <string name="restore_link">Restore</string>
+    <string name="login_prompt">Login:</string>
+    <string name="password_prompt">Password:</string>
+    <string name="password_recovery_page_name">Password Recovery</string>
+    <string name="remember_login_text">Remember me</string>
+
+    <string name="ownerId_field_prompt">OwnerId:</string>
+    <string name="email_field_prompt">Email:</string>
+    <string name="objectId_field_prompt">ObjectId:</string>
+    <string name="created_field_prompt">Created:</string>
+    <string name="password_field_prompt">Password:</string>
+    <string name="updated_field_prompt">Updated:</string>
+    <string name="name_field_prompt">Name:</string>
+    <string name="file_field_prompt">File:</string>
+    <string name="registration_success">Registered successfully!</string>
+    <string name="registration_error">Registration error!</string>
+
+    <string name="restore_password_page_name">Password Restoration</string>
+    <string name="password_recovered_message">We sent an email to your email address with a link to a password change page. Please check your email and follow the link for further instructions.</string>
+    <string name="registration_page_name">Registration</string>
+    <string name="registration_success_message">Thank you for registering with the %1$s.</string>
+
+
+    <!-- __________ change this credentials and configure your applications __________ -->
+    <!-- You also need to set android debug key in Facebook and Google apps -->
+
+    <!-- for Facebook -->
+    <!-- https://developers.facebook.com/docs/facebook-login/android -->
+    <string name="facebook_app_id"></string>
+    <string name="fb_login_protocol_scheme">fb...</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="flash">Flash</string>
+    <string name="videos">Videos</string>
+    <string name="contacts">Contacts</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="cancel">Cancel</string>
+    <string name="name">Name</string>
+    <string name="add_or_edit_contact">Add Or Edit Contact</string>
+    <string name="add_or_edit_video">Add Or Edit Video</string>
+    <string name="video_name">Video Name</string>
+
+    <!-- for Google -->
+    <!-- https://developers.google.com/identity/sign-in/android/start-integrating -->
+
+    <string-array name="contact_names">
+        <item>Dummy Contact</item>
+    </string-array>
+
+    <string-array name="contact_numbers">
+        <item>+99999999999</item>
+    </string-array>
+
+    <string-array name="video_name">
+        <item>Story 1</item>
+        <item>Story 2</item>
+        <item>Mahabharat</item>
+        <item>Ramayan</item>
+        <item>Bharataleela</item>
+        <item>Kachara Besa</item>
+        <item>Bal Ganesh</item>
+        <item>Lab kush</item>
+        <item>Krushna Janma</item>
+        <item>Dharma Khetra</item>
+        <item>Danda Nacha</item>
+        <item>Danda Nacha</item>
+        <item>Akatya Bachan</item>
+        <item>Jama danda</item>
+        <item>କର୍ଣ୍ଣବଧ ଗୀତିନାଟ୍ୟ</item>
+        <item>Prahallad Natak</item>
+        <item>Kali Jai</item>
+        <item>Taa poi</item>
+    </string-array>
+
+    <string-array name="video_urls">
+        <item>https://www.youtube.com/c/SidharthBhakti/playlists</item>
+        <item>https://www.youtube.com/c/OdiaBhaktisagar/playlists</item>
+        <item>https://www.youtube.com/watch?v=HnXkv_ozPQw&amp;list=PLFr_jkwUp0hhm1lR1TSdgESOfoyLQR3t2</item>
+        <item>https://www.youtube.com/watch?v=cuJVG5tLHko</item>
+        <item>https://www.youtube.com/watch?v=pQq6jGTFYis</item>
+        <item>https://www.youtube.com/watch?v=6i2ZjNDdH4w</item>
+        <item>https://www.youtube.com/watch?v=Gvi4uUj9o18</item>
+        <item>https://www.youtube.com/watch?v=KlS0LDL_wGs</item>
+        <item>https://www.youtube.com/watch?v=uCln4aFeLBM</item>
+        <item>https://www.youtube.com/watch?v=gxy1mjt2w70&amp;list=PLTdisiBlt2krfa8CVp2wbTI2bux5z26sY</item>
+        <item>https://www.youtube.com/watch?v=NeRHqbNPG88</item>
+        <item>https://www.youtube.com/watch?v=lpBeB2HZV_Q</item>
+        <item>https://www.youtube.com/watch?v=lpBeB2HZV_Q</item>
+        <item>https://www.youtube.com/watch?v=bP5DWLU8BcI</item>
+        <item>https://www.youtube.com/watch?v=7F6D1EB4QUA</item>
+        <item>https://www.youtube.com/watch?v=DEwCwsNh8qk</item>
+        <item>https://www.youtube.com/watch?v=2tyJURGg1EY</item>
+        <item>https://www.youtube.com/watch?v=rjJr4LZFqw4</item>
+    </string-array>
+</resources>

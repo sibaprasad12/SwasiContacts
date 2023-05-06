@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="AppCompatResource">
+    <item
+        android:id="@+id/menu_edit"
+        android:showAsAction="always"
+        android:title="@string/edit" />
+    <item
+        android:id="@+id/menu_delete"
+        android:showAsAction="always"
+        android:title="@string/delete" />
+</menu>

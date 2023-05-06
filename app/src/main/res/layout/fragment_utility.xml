@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dimen_10dp"
+        android:background="@color/white"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewRinger"
+            android:layout_width="@dimen/dimen_icon_size"
+            android:layout_height="@dimen/dimen_icon_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_notifications" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewTorch1"
+            android:layout_width="@dimen/dimen_icon_size"
+            android:layout_height="@dimen/dimen_icon_size"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_torch" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewCamera"
+            android:layout_width="@dimen/dimen_icon_size"
+            android:layout_height="@dimen/dimen_icon_size"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewRinger"
+            app:srcCompat="@drawable/ic_baseline_camera_alt_24" />
+
+
+        <ProgressBar
+            android:id="@+id/progressBarBattery"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:indeterminateOnly="false"
+            android:max="100"
+            android:progress="50"
+            android:progressDrawable="@drawable/progress_drawable"
+            app:layout_constraintTop_toBottomOf="@+id/tvBattery" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvBattery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ବ୍ୟାଟେରୀ"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewCamera" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewVideo"
+            android:layout_width="@dimen/dimen_icon_size"
+            android:layout_height="@dimen/dimen_icon_size"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewTorch1"
+            app:srcCompat="@drawable/ic_baseline_videocam_24" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewAlarm"
+            android:layout_width="@dimen/dimen_icon_size"
+            android:layout_height="@dimen/dimen_icon_size"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_baseline_access_alarm_24" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stepSize="10"
+            android:valueFrom="0"
+            android:valueTo="50"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:thumbRadius="20dp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewTorch"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBarBattery"
+            app:srcCompat="@drawable/ic_torch" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerviewImage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBarBattery"
+            tools:layout_editor_absoluteX="10dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
