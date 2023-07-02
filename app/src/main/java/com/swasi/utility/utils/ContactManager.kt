@@ -57,7 +57,7 @@ object ContactManager {
     fun getImageList(context: Context): MutableList<ImageModel> {
         var listImage = mutableListOf<ImageModel>()
 
-        val imageDrawableArray = context.resources.obtainTypedArray(R.array.image_drawable_array)
+        val imageDrawableArray = context.resources.obtainTypedArray(R.array.contact_drawable_array)
         for (i in 1..19) {
             listImage.add(ImageModel(imageDrawableArray.getResourceId(i, -1)))
         }

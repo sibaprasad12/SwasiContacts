@@ -2,12 +2,47 @@
 <resources>
 
     <array name="contact_drawable_array">
-        <item>@drawable/ic_play_circle</item>
+        <item>@drawable/satya</item>
+        <item>@drawable/namita</item>
+        <item>@drawable/sabita</item>
+        <item>@drawable/siba</item>
+        <item>@drawable/niki</item>
+        <item>@drawable/mamuni</item>
+        <item>@drawable/ramesh</item>
+        <item>@drawable/tuna</item>
+        <item>@drawable/babu</item>
+        <item>@drawable/mitu</item>
+        <item>@drawable/rupali</item>
+        <item>@drawable/kenchu</item>
+        <item>@drawable/babula</item>
+        <item>@drawable/prafulla</item>
+        <item>@drawable/rohit</item>
+        <item>@drawable/uttam_bhai</item>
+        <item>@drawable/hina</item>
+        <item>@drawable/kalia</item>
+        <item>@drawable/doctor_uttam</item>
+        <item>@drawable/bhaja</item>
+        <item>@drawable/subash</item>
+        <item>@drawable/alok</item>
+        <item>@drawable/bus</item>
     </array>
 
 
     <array name="image_drawable_array">
-
+        <item>@drawable/satya</item>
+        <item>@drawable/niki</item>
+        <item>@drawable/siba</item>
+        <item>@drawable/mamuni</item>
+        <item>@drawable/namita</item>
+        <item>@drawable/sabita</item>
+        <item>@drawable/ramesh</item>
+        <item>@drawable/tuna</item>
+        <item>@drawable/babu</item>
+        <item>@drawable/mitu</item>
+        <item>@drawable/rupali</item>
+        <item>@drawable/kenchu</item>
+        <item>@drawable/rohit</item>
+        <item></item>
     </array>
 
 </resources>

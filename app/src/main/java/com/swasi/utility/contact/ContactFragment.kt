@@ -74,7 +74,7 @@ class ContactFragment : Fragment(), ContactClicklistener {
             insertAllFavouriteVideos()
             val edit = app_preferences.edit()
             edit.putInt("isInstalled", 1)
-            edit.commit()
+            edit.apply()
         }
 
         contactViewModel.getAllContacts(requireContext())
@@ -114,7 +114,9 @@ class ContactFragment : Fragment(), ContactClicklistener {
         }catch (e : Exception){ //App not found open in browser
             intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.telegram.me/$contactEntity.mobileNumber"))
         }
-        startActivity(intent)
+        if (intent != null) {
+            startActivity(intent)
+        }
     }
 
 

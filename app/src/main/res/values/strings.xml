@@ -70,26 +70,70 @@
     <!-- https://developers.google.com/identity/sign-in/android/start-integrating -->
 
     <string-array name="contact_names">
-        <item>Dummy Contact</item>
+        <item>ନାରାୟଣ</item>
+        <item>ନମିତା</item>
+        <item>ସବିତା</item>
+        <item>ସିବ</item>
+        <item>ନିକି</item>
+        <item>ମାମୁନି</item>
+        <item>ରମେଶ</item>
+        <item>ଟୁନା</item>
+        <item>ବବୁନୁ</item>
+        <item>ମିତାଲି</item>
+        <item>ରୁପାଲି</item>
+        <item>କେଞ୍ଚୁ</item>
+        <item>ବାବୁଲା</item>
+        <item>ପ୍ରଫୁଲ୍ଲା </item>
+        <item>ରୋହିତ</item>
+        <item>ଉତମ୍</item>
+        <item>ହିନ</item>
+        <item>କାଳିଆ</item>
+        <item>ଡାକ୍ଟର ଉତମ୍</item>
+        <item>ଭଜ ଅଟୋ ବାଲା</item>
+        <item>ସୁବାସ - ସିବ ସସୁର</item>
+        <item>ଆଲୋକ</item>
+        <item>ବସ୍</item>
     </string-array>
 
     <string-array name="contact_numbers">
-        <item>+99999999999</item>
+        <item>+918249429560</item>
+        <item>+919078148917</item>
+        <item>+919768181446</item>
+        <item>+919768235871</item>
+        <item>+917681853532</item>
+        <item>+917327095376</item>
+        <item>+919437812496</item>
+        <item>+918691921922</item>
+        <item>+918709361041</item>
+        <item>+918018906156</item>
+        <item>+918689972260</item>
+        <item>+919938068118</item>
+        <item>+918108655005</item>
+        <item>+91977198227</item>
+        <item>+918917580826</item>
+        <item>+919892898562</item>
+        <item>+919668481451</item>
+        <item>+919438073157</item>
+        <item>+918658506254</item>
+        <item>+919938021478</item>
+        <item>+919938851933</item>
+        <item>+918260076056</item>
+        <item>+918895881320</item>
     </string-array>
 
     <string-array name="video_name">
         <item>Story 1</item>
-        <item>Story 2</item>
-        <item>Mahabharat</item>
-        <item>Ramayan</item>
-        <item>Bharataleela</item>
-        <item>Kachara Besa</item>
+        <item>ମହାଭାରତ</item>
+        <item>ରାମାୟଣ</item>
+        <item>ଶ୍ରୀ ଜଗନ୍ନାଥ</item>
+        <item>ଭରତୀଲା</item>
+        <item>କାଚରା ବେସ</item>
         <item>Bal Ganesh</item>
-        <item>Lab kush</item>
-        <item>Krushna Janma</item>
+        <item>ଲବ କୁଶ</item>
+        <item>କୃଷ୍ଣ ଜନମ</item>
         <item>Dharma Khetra</item>
-        <item>Danda Nacha</item>
-        <item>Danda Nacha</item>
+        <item>ଦଣ୍ଡ ନାଚ</item>
+        <item>ଦଣ୍ଡ ନାଚ</item>
         <item>Akatya Bachan</item>
         <item>Jama danda</item>
         <item>କର୍ଣ୍ଣବଧ ଗୀତିନାଟ୍ୟ</item>
@@ -100,11 +144,11 @@
 
     <string-array name="video_urls">
         <item>https://www.youtube.com/c/SidharthBhakti/playlists</item>
-        <item>https://www.youtube.com/c/OdiaBhaktisagar/playlists</item>
         <item>https://www.youtube.com/watch?v=HnXkv_ozPQw&amp;list=PLFr_jkwUp0hhm1lR1TSdgESOfoyLQR3t2</item>
         <item>https://www.youtube.com/watch?v=cuJVG5tLHko</item>
+        <item>https://www.youtube.com/watch?v=1-0FRK5i9WY&amp;list=RDCMUCRl-o5ehrcEfsVPPY5ovDMQ&amp;index=2</item>
         <item>https://www.youtube.com/watch?v=pQq6jGTFYis</item>
-        <item>https://www.youtube.com/watch?v=6i2ZjNDdH4w</item>
+        <item>https://www.youtube.com/watch?v=6Z6Y9SX7MIA</item>
         <item>https://www.youtube.com/watch?v=Gvi4uUj9o18</item>
         <item>https://www.youtube.com/watch?v=KlS0LDL_wGs</item>
         <item>https://www.youtube.com/watch?v=uCln4aFeLBM</item>

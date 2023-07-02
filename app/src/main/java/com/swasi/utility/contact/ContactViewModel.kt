@@ -53,10 +53,10 @@ class ContactViewModel() : ViewModel() {
         }
     }
 
-    fun insertAll(context: Context, listCOntact: List<ContactEntity>) {
+    fun insertAll(context: Context, listContact: List<ContactEntity>) {
         viewModelScope.launch {
             try {
-                SwasiContactRoomDatabase.getDatabase(context).contactDao().insertAll(listCOntact)
+                SwasiContactRoomDatabase.getDatabase(context).contactDao().insertAll(listContact)
             } catch (e: Exception) {
                 Log.i("TAG", e.message.toString())
             }

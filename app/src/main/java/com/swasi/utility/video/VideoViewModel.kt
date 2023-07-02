@@ -4,10 +4,8 @@ import android.content.Context
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
 import com.swasi.utility.database.SwasiContactRoomDatabase
-import com.swasi.utility.model.ContactEntity
 import com.swasi.utility.model.VideoEntity
 import com.swasi.utility.model.VideoModel
 import kotlinx.coroutines.Dispatchers
@@ -41,10 +39,10 @@ class VideoViewModel() : ViewModel() {
         }
     }
 
-    fun insertAllVideos(context: Context, listCOntact: List<VideoEntity>) {
+    fun insertAllVideos(context: Context, listVideos: List<VideoEntity>) {
         viewModelScope.launch {
             try {
-                SwasiContactRoomDatabase.getDatabase(context).videoDao().insertAllVideos(listCOntact)
+                SwasiContactRoomDatabase.getDatabase(context).videoDao().insertAllVideos(listVideos)
             } catch (e: Exception) {
                 Log.i("TAG", e.message.toString())
             }
