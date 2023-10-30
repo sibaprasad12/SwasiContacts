@@ -3,6 +3,7 @@ package com.swasi.utility
 import android.Manifest
 import android.content.pm.PackageManager
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
@@ -10,6 +11,8 @@ import androidx.core.content.ContextCompat
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import java.util.regex.Matcher
+import java.util.regex.Pattern
 
 
 class MainActivity : AppCompatActivity() {
@@ -17,11 +20,14 @@ class MainActivity : AppCompatActivity() {
     private val PERMISSION_REQUEST_CODE = 100
     private val CALL_PERMISSION_CODE = 101
     private val STORAGE_PERMISSION_CODE = 102
+    private val SMS_PERMISSION_CODE = 103
     private val permissionArray = arrayOf(
         Manifest.permission.CALL_PHONE,
         Manifest.permission.READ_EXTERNAL_STORAGE,
         Manifest.permission.READ_CONTACTS,
-        Manifest.permission.CAMERA
+        Manifest.permission.CAMERA,
+        Manifest.permission.READ_SMS,
+        Manifest.permission.RECEIVE_SMS
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,7 +40,6 @@ class MainActivity : AppCompatActivity() {
             permissionArray,
             PERMISSION_REQUEST_CODE
         )
-
     }
 
     private fun setUpBottomNavigation() {
@@ -63,21 +68,43 @@ class MainActivity : AppCompatActivity() {
         grantResults: IntArray
     ) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-        if (requestCode == CALL_PERMISSION_CODE) {
-            if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                Toast.makeText(this@MainActivity, "Call Permission Granted", Toast.LENGTH_SHORT)
-                    .show()
-            } else {
-                Toast.makeText(this@MainActivity, "Call Permission Denied", Toast.LENGTH_SHORT)
-                    .show()
+        when (requestCode) {
+            CALL_PERMISSION_CODE -> {
+                if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    Toast.makeText(this@MainActivity, "Call Permission Granted", Toast.LENGTH_SHORT)
+                        .show()
+                } else {
+                    Toast.makeText(this@MainActivity, "Call Permission Denied", Toast.LENGTH_SHORT)
+                        .show()
+                }
             }
-        } else if (requestCode == STORAGE_PERMISSION_CODE) {
-            if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                Toast.makeText(this@MainActivity, "Storage Permission Granted", Toast.LENGTH_SHORT)
-                    .show()
-            } else {
-                Toast.makeText(this@MainActivity, "Storage Permission Denied", Toast.LENGTH_SHORT)
-                    .show()
+
+            STORAGE_PERMISSION_CODE -> {
+                if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    Toast.makeText(
+                        this@MainActivity,
+                        "Storage Permission Granted",
+                        Toast.LENGTH_SHORT
+                    )
+                        .show()
+                } else {
+                    Toast.makeText(
+                        this@MainActivity,
+                        "Storage Permission Denied",
+                        Toast.LENGTH_SHORT
+                    )
+                        .show()
+                }
+            }
+
+            SMS_PERMISSION_CODE -> {
+                if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    Toast.makeText(this@MainActivity, "SMS Permission Granted", Toast.LENGTH_SHORT)
+                        .show()
+                } else {
+                    Toast.makeText(this@MainActivity, "SMS Permission Denied", Toast.LENGTH_SHORT)
+                        .show()
+                }
             }
         }
     }

@@ -57,7 +57,7 @@
             android:layout_marginTop="@dimen/dimen_10dp"
             android:background="@drawable/rounded_edittext"
             android:hint="MOBILE NUMBER"
-            android:inputType="numberDecimal"
+            android:inputType="phone"
             android:maxLength="15"
             android:singleLine="true"
             android:paddingStart="@dimen/dimen_10dp"

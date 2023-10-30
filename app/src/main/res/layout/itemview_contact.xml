@@ -45,7 +45,7 @@
                 app:swasiImage="@{contact}" />
 
             <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tvContactName"
+                android:id="@+id/tvSmsNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="3dp"
@@ -59,7 +59,7 @@
                 tools:text="Name" />
 
             <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tvContactNumber"
+                android:id="@+id/tvSmsContent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="3dp"
@@ -68,7 +68,7 @@
                 android:textSize="15sp"
                 app:layout_constraintEnd_toStartOf="@+id/imageViewCall"
                 app:layout_constraintStart_toEndOf="@+id/imageViewProfile"
-                app:layout_constraintTop_toBottomOf="@+id/tvContactName"
+                app:layout_constraintTop_toBottomOf="@+id/tvSmsNumber"
                 tools:Text="Mobile Number" />
 
             <androidx.appcompat.widget.AppCompatImageView

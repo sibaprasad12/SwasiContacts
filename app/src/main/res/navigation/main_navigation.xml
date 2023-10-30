@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/contactFragment"
-        android:name="com.swasi.utility.contact.ContactFragment"
+        android:name="com.swasi.utility.ui.contact.ContactFragment"
         android:label="ContactFragment"
         tools:layout="@layout/fragment_contact">
         <action
@@ -22,8 +22,15 @@
     </fragment>
 
     <fragment
+        android:id="@+id/messageFragment"
+        android:name="com.swasi.utility.ui.messages.MessageFragment"
+        android:label="MessageFragment"
+        tools:layout="@layout/fragment_message">
+    </fragment>
+
+    <fragment
         android:id="@+id/editContactFragment"
-        android:name="com.swasi.utility.contact.EditContactFragment"
+        android:name="com.swasi.utility.ui.contact.EditContactFragment"
         android:label="EDit Contact"
         tools:layout="@layout/fragment_edit_contact">
         <action
@@ -33,13 +40,13 @@
 
     <fragment
         android:id="@+id/flashLightFragment"
-        android:name="com.swasi.utility.flashLight.UtilityFragment"
+        android:name="com.swasi.utility.ui.flashLight.UtilityFragment"
         android:label="LauncherNavFragment"
         tools:layout="@layout/fragment_utility" />
 
     <fragment
         android:id="@+id/videoFragment"
-        android:name="com.swasi.utility.video.VideoFragment"
+        android:name="com.swasi.utility.ui.video.VideoFragment"
         android:label="thirdNavFragment"
         tools:layout="@layout/fragment_video">
         <action
@@ -54,7 +61,7 @@
 
     <fragment
         android:id="@+id/editVideoFragment"
-        android:name="com.swasi.utility.video.EditVideoFragment"
+        android:name="com.swasi.utility.ui.video.EditVideoFragment"
         android:label="Edit Video"
         tools:layout="@layout/fragment_edit_video">
         <action
