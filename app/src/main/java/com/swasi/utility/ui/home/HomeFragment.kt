@@ -26,7 +26,7 @@ import com.swasi.utility.ui.video.VideoFragment
 class HomeFragment : Fragment() {
     lateinit var binding: FragmentHomeBinding
     val tabTitleArray = arrayOf(
-        "Contact",
+        "Message",
         "Flash Light",
         "Youtube",
     )
@@ -59,7 +59,7 @@ class HomeFragment : Fragment() {
 //        }
 
         val adapter = TabPagerAdapter(activity as FragmentActivity)
-        adapter.setTabbedFragment(arrayOf( UtilityFragment(), VideoFragment()))
+        adapter.setTabbedFragment(arrayOf( MessageFragment(), UtilityFragment(), VideoFragment()))
         binding.tvShowViewPager.adapter = adapter
         binding.tvShowViewPager.currentItem = 0
 

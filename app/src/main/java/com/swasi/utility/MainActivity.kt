@@ -1,6 +1,7 @@
 package com.swasi.utility
 
 import android.Manifest
+import android.content.IntentFilter
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.util.Log
@@ -10,7 +11,9 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
+import com.google.android.gms.auth.api.phone.SmsRetriever
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.swasi.utility.ui.messages.SmsBroadcastReceiver
 import java.util.regex.Matcher
 import java.util.regex.Pattern
 
@@ -30,16 +33,20 @@ class MainActivity : AppCompatActivity() {
         Manifest.permission.RECEIVE_SMS
     )
 
+    private var intentFilter: IntentFilter? = null
+    private var smsReceiver: SmsBroadcastReceiver? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setUpBottomNavigation()
 
-
         checkPermission(
             permissionArray,
             PERMISSION_REQUEST_CODE
         )
+
+        initBroadCast()
     }
 
     private fun setUpBottomNavigation() {
@@ -107,5 +114,19 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
+    }
+
+    private fun initBroadCast() {
+        intentFilter = IntentFilter(SmsRetriever.SMS_RETRIEVED_ACTION)
+        smsReceiver = SmsBroadcastReceiver()
+        smsReceiver?.init(object : SmsBroadcastReceiver.OTPReceiveListener {
+            override fun onOTPReceived(otp: String) {
+//                showToast("OTP Received: $otp")
+            }
+
+            override fun onOTPTimeOut() {
+//                showToast("OTP TIME OUT")
+            }
+        })
     }
 }

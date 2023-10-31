@@ -3,7 +3,7 @@ package com.swasi.utility.app
 import android.app.Application
 import android.content.IntentFilter
 import android.provider.Telephony
-import com.swasi.utility.ui.messages.SmsBroadcastReceiver
+import com.swasi.utility.ui.messages.MySmsBroadcastReceiver
 
 /**
  * Created by Sibaprasad Mohanty on 12/02/2022.
@@ -12,13 +12,13 @@ import com.swasi.utility.ui.messages.SmsBroadcastReceiver
  */
 
 class SwasiUtilityApp : Application() {
-    private lateinit var smsBroadcastReceiver: SmsBroadcastReceiver
+    private lateinit var mySmsBroadcastReceiver: MySmsBroadcastReceiver
     override fun onCreate() {
         super.onCreate()
-        smsBroadcastReceiver =
-            SmsBroadcastReceiver(/*BuildConfig.SERVICE_NUMBER, BuildConfig.SERVICE_CONDITION*/)
+        mySmsBroadcastReceiver =
+            MySmsBroadcastReceiver(/*BuildConfig.SERVICE_NUMBER, BuildConfig.SERVICE_CONDITION*/)
         registerReceiver(
-            smsBroadcastReceiver,
+            mySmsBroadcastReceiver,
             IntentFilter(Telephony.Sms.Intents.SMS_RECEIVED_ACTION)
         )
     }
@@ -32,14 +32,14 @@ class SwasiUtilityApp : Application() {
         }
     }
 
-    fun setListener(listener: SmsBroadcastReceiver.SmsListener) {
-        smsBroadcastReceiver.setListener(listener)
+    fun setListener(listener: MySmsBroadcastReceiver.SmsListener) {
+        mySmsBroadcastReceiver.setListener(listener)
     }
 
-    fun getSmsReceiverInstance() = smsBroadcastReceiver
+    fun getSmsReceiverInstance() = mySmsBroadcastReceiver
 
     override fun onTerminate() {
-        unregisterReceiver(smsBroadcastReceiver)
+        unregisterReceiver(mySmsBroadcastReceiver)
         super.onTerminate()
     }
 }

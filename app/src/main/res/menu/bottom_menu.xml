@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-<!--    <item
+    <item
         android:id="@+id/messageFragment"
         android:icon="@drawable/baseline_sms_24"
         android:title="@string/message"
-        android:visible="true" />-->
+        android:visible="true" />
 
-    <item
+<!--    <item
         android:id="@+id/contactFragment"
         android:icon="@drawable/ic_call"
         android:title="@string/contacts"
-        android:visible="true" />
+        android:visible="true" />-->
 
     <item
         android:id="@+id/videoFragment"
